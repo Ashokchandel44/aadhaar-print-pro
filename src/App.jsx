@@ -166,7 +166,7 @@ export default function App() {
         <section className="no-print rounded-3xl border border-blue-100 bg-white/85 p-5 shadow-xl shadow-blue-950/5 backdrop-blur md:p-8">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-3xl">
-              <h1 className="text-3xl font-black tracking-tight text-slate-950 md:text-5xl">Aadhaar Card Print Online Tool – Aadhaar Print Pro ashok </h1>
+              <h1 className="text-3xl font-black tracking-tight text-slate-950 md:text-5xl">Aadhaar Card Print Online Tool – Aadhaar Print Pro ashok1 </h1>
               <p className="mt-3 text-base font-medium leading-7 text-slate-600">
                 Upload front and back Aadhaar images, auto crop Aadhaar image and generate print-ready PDF, then download and print Aadhaar card instantly.
               </p>
