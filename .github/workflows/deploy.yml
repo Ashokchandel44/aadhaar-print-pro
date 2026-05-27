@@ -27,6 +27,17 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Show built files
+        run: |
+          echo "ROOT:"
+          pwd
+          echo "DIST:"
+          ls -la dist
+          echo "ASSETS:"
+          ls -la dist/assets
+          echo "INDEX:"
+          cat dist/index.html
+
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -36,5 +47,5 @@ jobs:
           protocol: ftp
           port: 21
           local-dir: dist/
-          server-dir: /public_html/
-          log-level: verbose
+          server-dir: aadhaar-print-pro/
+          dangerous-clean-slate: true
