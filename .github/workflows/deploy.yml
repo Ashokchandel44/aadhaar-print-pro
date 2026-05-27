@@ -41,11 +41,11 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: 178.16.136.207
+          server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
           port: 21
           local-dir: dist/
-          server-dir: /public_html/aadhaar-print-pro/
+          server-dir: aadhaar-print-pro/
           dangerous-clean-slate: true
