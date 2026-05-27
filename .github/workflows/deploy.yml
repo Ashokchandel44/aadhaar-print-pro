@@ -36,5 +36,5 @@ jobs:
           protocol: ftp
           port: 21
           local-dir: dist/
-          server-dir: /public_html/aadhaar-print-pro/
-          dangerous-clean-slate: true 
+          server-dir: ./
+          log-level: verbose
