@@ -49,5 +49,7 @@ jobs:
           local-dir: dist/
           server-dir: aadhaar-print-pro/
           dangerous-clean-slate: true  
+          log-level: verbose
+          timeout: 60000
  
             
