@@ -58,6 +58,16 @@ export default function CropModal({ imageSrc, title, onCancel, onApply }) {
   const [error, setError] = useState('')
   const [busy, setBusy] = useState(false)
 
+
+  useEffect(() => {
+    document.body.style.overflow = 'hidden'
+
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [])
+
+
   useEffect(() => {
     const onPointerMove = (event) => {
       const drag = dragRef.current
