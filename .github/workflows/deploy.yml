@@ -38,11 +38,6 @@ jobs:
           echo "INDEX:"
           cat dist/index.html
 
-          - name: Debug secrets
-          run: |
-            echo "Host chars: $(echo -n '${{ secrets.FTP_HOST }}' | wc -c)"
-            echo "User chars: $(echo -n '${{ secrets.FTP_USERNAME }}' | wc -c)"
-
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -53,6 +48,6 @@ jobs:
           port: 21
           local-dir: dist/
           server-dir: /domains/travelwithanki.com/public_html/aadhaar-print-pro/
-          dangerous-clean-slate: true  
+          dangerous-clean-slate: true 
 
             
