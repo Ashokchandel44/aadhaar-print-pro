@@ -48,6 +48,6 @@ jobs:
           port: 21
           local-dir: dist/
           server-dir: aadhaar-print-pro/
-          dangerous-clean-slate: true 
+          dangerous-clean-slate: true  
  
             
