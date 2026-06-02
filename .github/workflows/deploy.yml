@@ -47,7 +47,7 @@ jobs:
           protocol: ftp
           port: 21
           local-dir: dist/
-          server-dir: /domains/travelwithanki.com/public_html/aadhaar-print-pro/
+          server-dir: aadhaar-print-pro/
           dangerous-clean-slate: true 
  
             
