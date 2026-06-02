@@ -48,5 +48,5 @@ jobs:
           port: 21
           local-dir: dist/
           server-dir: /domains/travelwithanki.com/public_html/aadhaar-print-pro/
-          dangerous-clean-slate: true  
+          dangerous-clean-slate: true 
            
