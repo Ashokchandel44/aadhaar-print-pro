@@ -38,6 +38,11 @@ jobs:
           echo "INDEX:"
           cat dist/index.html
 
+          - name: Debug secrets
+          run: |
+            echo "Host chars: $(echo -n '${{ secrets.FTP_HOST }}' | wc -c)"
+            echo "User chars: $(echo -n '${{ secrets.FTP_USERNAME }}' | wc -c)"
+
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
